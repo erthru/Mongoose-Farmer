@@ -23,7 +23,7 @@ schema.virtual("members", {
 
 schema.set("toJSON", {
     transform: (doc, ret, options) => {
-        delete ret._id;
+        delete ret.id;
         return ret;
     },
 

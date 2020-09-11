@@ -34,7 +34,7 @@ schema.virtual("team", {
 
 schema.set("toJSON", {
     transform: (doc, ret, options) => {
-        delete ret._id;
+        delete ret.id;
         delete ret.teamId;
         return ret;
     },
